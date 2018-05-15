@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Error Proofs";
+}
+<h2>@ViewData["Title"]</h2>
+
+<section>
+    <form method="post">
+        <div class="form-group btn-group">
+            <button type="submit" class="btn btn-primary" name="button" value="NotFoundResult">NotFoundResult</button>
+            <button type="submit" class="btn btn-primary" name="button" value="StatusCodeResult-500">StatusCodeResult-500</button>
+            <button type="submit" class="btn btn-primary" name="button" value="ApplicationException">ApplicationException</button>
+            <button type="submit" class="btn btn-primary" name="button" value="ArgumentNullException">ArgumentNullException</button>
+        </div>
+    </form>
+</section>
+ 
